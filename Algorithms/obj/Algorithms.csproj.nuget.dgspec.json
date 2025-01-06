@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/peter/RiderProjects/Algorithms/Algorithms.csproj": {}
+    "/Users/peter/RiderProjects/Algorithms/Algorithms/Algorithms.csproj": {}
   },
   "projects": {
-    "/Users/peter/RiderProjects/Algorithms/Algorithms.csproj": {
+    "/Users/peter/RiderProjects/Algorithms/Algorithms/Algorithms.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/peter/RiderProjects/Algorithms/Algorithms.csproj",
+        "projectUniqueName": "/Users/peter/RiderProjects/Algorithms/Algorithms/Algorithms.csproj",
         "projectName": "Algorithms",
-        "projectPath": "/Users/peter/RiderProjects/Algorithms/Algorithms.csproj",
+        "projectPath": "/Users/peter/RiderProjects/Algorithms/Algorithms/Algorithms.csproj",
         "packagesPath": "/Users/peter/.nuget/packages/",
-        "outputPath": "/Users/peter/RiderProjects/Algorithms/obj/",
+        "outputPath": "/Users/peter/RiderProjects/Algorithms/Algorithms/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/peter/.nuget/NuGet/NuGet.Config"

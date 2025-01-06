@@ -5,4 +5,5 @@ using Algorithms.Fibonacci;
 Console.WriteLine("Hello, World!");
 
 //FibnacciCode.RunFibunacci();
-FibnacciCode.RecursiveFibonacci(0,1);
+//FibnacciCode.RecursiveFibonacci(0,1, 3);
+FibnacciCode.FindNFibonacci(3);

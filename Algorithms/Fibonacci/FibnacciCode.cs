@@ -18,12 +18,11 @@ public class FibnacciCode
             firstNum = secondNum;
             secondNum = nextNum;
         }
-        Console.WriteLine(allNumbers);
     }
 
-    public static void RecursiveFibonacci(int num1, int num2)
+    public static void RecursiveFibonacci(int num1, int num2, int count)
     {
-        int count = 3;
+        
         if (count < 10)
         {
             int newNum = num1 + num2;
@@ -31,11 +30,24 @@ public class FibnacciCode
             num1 = num2;
             num2 = newNum;
             count += 1;
-            RecursiveFibonacci(num1, num2);
+            RecursiveFibonacci(num1, num2, count);
         }
         else
         {
             return;
+        }
+    }
+
+    public static int FindNFibonacci(int n)
+    {
+        Console.WriteLine(n);
+        if (n <= 1)
+        {
+            return n;
+        }
+        else
+        {
+            return FindNFibonacci(n - 1) + FindNFibonacci(n - 2);
         }
     }
 }
