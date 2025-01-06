@@ -1,0 +1,14 @@
+/Users/peter/RiderProjects/Algorithms/bin/Debug/net9.0/Algorithms
+/Users/peter/RiderProjects/Algorithms/bin/Debug/net9.0/Algorithms.deps.json
+/Users/peter/RiderProjects/Algorithms/bin/Debug/net9.0/Algorithms.runtimeconfig.json
+/Users/peter/RiderProjects/Algorithms/bin/Debug/net9.0/Algorithms.dll
+/Users/peter/RiderProjects/Algorithms/bin/Debug/net9.0/Algorithms.pdb
+/Users/peter/RiderProjects/Algorithms/obj/Debug/net9.0/Algorithms.GeneratedMSBuildEditorConfig.editorconfig
+/Users/peter/RiderProjects/Algorithms/obj/Debug/net9.0/Algorithms.AssemblyInfoInputs.cache
+/Users/peter/RiderProjects/Algorithms/obj/Debug/net9.0/Algorithms.AssemblyInfo.cs
+/Users/peter/RiderProjects/Algorithms/obj/Debug/net9.0/Algorithms.csproj.CoreCompileInputs.cache
+/Users/peter/RiderProjects/Algorithms/obj/Debug/net9.0/Algorithms.dll
+/Users/peter/RiderProjects/Algorithms/obj/Debug/net9.0/refint/Algorithms.dll
+/Users/peter/RiderProjects/Algorithms/obj/Debug/net9.0/Algorithms.pdb
+/Users/peter/RiderProjects/Algorithms/obj/Debug/net9.0/Algorithms.genruntimeconfig.cache
+/Users/peter/RiderProjects/Algorithms/obj/Debug/net9.0/ref/Algorithms.dll
