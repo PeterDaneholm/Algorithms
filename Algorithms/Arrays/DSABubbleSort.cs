@@ -33,4 +33,14 @@ public class DSABubbleSort
          * looped through
          */
     }
+    
+    /*
+     * Bubble Sort Time Complexity
+     * Bubble Sort will exponentially increase in time as the array increases,
+     * as the complexity can be written with the formula: O(n^2)
+     * This is because for each new entry the algorithm will have to sort through that entry,
+     * and sort through it again for each entry in the array.
+     * Other algorithms are faster, such as a Quick Sort. 
+     */
+    
 }
