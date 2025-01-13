@@ -10,4 +10,5 @@ Console.WriteLine("Hello, World!");
 //FibnacciCode.FindNFibonacci(3);
 
 //Arrays.FindLowest();
-DSABubbleSort.BubbleSort();
+//DSABubbleSort.BubbleSort();
+DSASelectionSort.SelectionSort();
