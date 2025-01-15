@@ -35,4 +35,9 @@ public class DSASelectionSort
         }
         Console.WriteLine(String.Join(", ", allNums));
     }
+    
+    /*
+     * Time complexity for SelectionSort is: n/2 * n, or in O(n^2). This is because the algorithm has to loop through
+     * the array n times to sort all, and then an additional time for each entry. Therefore an exponential increase with n size.  
+     */
 }
