@@ -2,14 +2,39 @@ namespace Algorithms.Data_Structures;
 
 public class DSAQuickSort
 {
-    void Partition(int[] nums, int low, int high)
+    static int Partition(int[] nums, int low, int high)
     {
         int newPivot = nums[high];
         int i = low - 1;
-        
+
+        for (int j = low; j < high; j++)
+        {
+            if (nums[j] <= newPivot)
+            {
+                i += 1;
+                (nums[i], nums[j]) = (nums[j], nums[i]);
+                Console.WriteLine(i);
+                Console.WriteLine(nums[i]);
+            }
+        }
+
+        (nums[i + 1], nums[high]) = (nums[high], nums[i + 1]);
+        return i + 1;
     }
     
-    public static void QuickSort()
+    public static void QuickSort(int[] array, int low, int high)
+    {
+        Console.WriteLine(String.Join(", ", array));
+
+        if (low < high)
+        {
+            int pivot_index = Partition(array, low, high);
+            QuickSort(array, low, pivot_index-1);
+            QuickSort(array, pivot_index+1, high);
+        }
+    }
+
+    public static void ActivateQuickSort()
     {
         /*
          * One of the quickest sorting algorithms
@@ -19,11 +44,7 @@ public class DSAQuickSort
          * Step 4 - Do the same operations recursively on the left and right side of the element
          */
         int[] allNums = new[] { 9, 2, 6, 3, 12, 5, 11 };
-        int pivot = allNums[-1];
-        
-        for (int i = 0; i < allNums.Length; i++)
-        {
-            
-        }
+        int high = allNums.Length - 1;
+        QuickSort(allNums, 0, high);
     }
 }

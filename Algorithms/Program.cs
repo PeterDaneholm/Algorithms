@@ -12,5 +12,6 @@ Console.WriteLine("Hello, World!");
 //Arrays.FindLowest();
 //DSABubbleSort.BubbleSort();
 //DSASelectionSort.SelectionSort();
-DSAInsertionSort.InsertionSort();
+//DSAInsertionSort.InsertionSort();
 //DSAInsertionSort.InsertionSort2();
+DSAQuickSort.ActivateQuickSort();
