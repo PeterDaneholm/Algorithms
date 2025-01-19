@@ -18,6 +18,8 @@ public class DSACountingSort
         
         foreach (var  num in allNums)
         {
+            //We'll iterate the first array and count each entry in the position of the new array. 
+            //i.e. allNums[3] = 5 will translate to countNums[4] = 1. 
             countNums[num]++;
         }
         
@@ -29,12 +31,14 @@ public class DSACountingSort
         {
             while (countNums[i] > 0)
             {
-                sorted[index++] = i;
+                //sorted[index++] = i;
+                //We'll add each index in countNums to the original array allNums, as that represent the values. 
+                allNums[index++] = i;
                 countNums[i]--;
             }
                 
         }
         
-        Console.WriteLine(String.Join(", ", sorted));
+        Console.WriteLine(String.Join(", ", allNums));
     }
 }

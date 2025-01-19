@@ -18,6 +18,8 @@ public class DSAQuickSort
             }
         }
 
+        //Below we'll swap the pivot element, so that it's placed in the correct place,
+        //which will be after all the elements that are lower than it
         (nums[i + 1], nums[high]) = (nums[high], nums[i + 1]);
         return i + 1;
     }
@@ -28,6 +30,8 @@ public class DSAQuickSort
 
         if (low < high)
         {
+            //First we'll do the primary sorting (lower or higher), and get the index of the pivot.
+            //Then we'll sort the below sub-array and the above sub-array with the Partition function
             int pivot_index = Partition(array, low, high);
             QuickSort(array, low, pivot_index-1);
             QuickSort(array, pivot_index+1, high);
@@ -44,7 +48,7 @@ public class DSAQuickSort
          * Step 4 - Do the same operations recursively on the left and right side of the element
          */
         int[] allNums = new[] { 9, 2, 6, 3, 12, 5, 11 };
-        int high = allNums.Length - 1;
+        int high = allNums.Length - 1; //This declares our initial pivot element
         QuickSort(allNums, 0, high);
     }
 }
