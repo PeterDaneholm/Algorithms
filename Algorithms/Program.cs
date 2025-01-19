@@ -15,4 +15,5 @@ Console.WriteLine("Hello, World!");
 //DSAInsertionSort.InsertionSort();
 //DSAInsertionSort.InsertionSort2();
 //DSAQuickSort.ActivateQuickSort();
-DSACountingSort.CountingSort();
+//DSACountingSort.CountingSort();
+DSARadixSort.RadixSort();
