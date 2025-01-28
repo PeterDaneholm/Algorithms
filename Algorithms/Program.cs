@@ -17,4 +17,5 @@ Console.WriteLine("Hello, World!");
 //DSAQuickSort.ActivateQuickSort();
 //DSACountingSort.CountingSort();
 //DSARadixSort.RadixSort();
-DSAMergeSort.MergeSort([2, 4, 1, 6, 8, 5, 3, 7]);
+//DSAMergeSort.MergeSort([2, 4, 1, 6, 8, 5, 3, 7]);
+DSALinearSearch.LinearSearch([5, 4, 12, 16, 9, 7, 6, 19, 2, 5], 7);
