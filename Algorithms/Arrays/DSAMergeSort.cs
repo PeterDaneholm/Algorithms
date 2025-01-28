@@ -16,14 +16,22 @@ public class DSAMergeSort
          * Step 4 - Keep merging until no more subarrays
          */
         
-        //int[] allNums = new[] { 5, 4, 2, 11, 9, 12, 6 };
+        if (allNums.Length <= 1)
+        {
+            //Ensuring it's not an infinite recursive loop by returning once equal to or less than 1
+            return allNums;
+        }
+        
         int half = Convert.ToInt32(Math.Floor((double)allNums.Length / 2));
         int[] left = new int[half];
+        Array.Copy(allNums, left, half);
         int[] right = new int[allNums.Length - half];
+        Array.Copy(allNums, half, right, 0, allNums.Length-half);
 
         int[] sortedLeft = MergeSort(left);
         int[] sortedRight = MergeSort(right);
         Console.WriteLine(String.Join(", ", sortedLeft));
+        Console.WriteLine(String.Join(", ", sortedRight));
 
         return Merge(sortedLeft, sortedRight);
     }
@@ -31,32 +39,37 @@ public class DSAMergeSort
     public static int[] Merge(int[] leftSort, int[] rightSort)
     {
         int[] result = new int[leftSort.Length + rightSort.Length];
-        int i = 0;
-        int j = 0;
+        int i = 0; //index for leftSort
+        int j = 0; //index for rightSort
+        int k = 0; //index for placing items in result
+        
+        //Check the position of i and j against the lengths of the arrays
         while (i < leftSort.Length && j < rightSort.Length)
         {
+            //Check if the value of the current index in leftSort is less than the value of the current index in rightSort
             if (leftSort[i] < rightSort[j])
             {
-                result.Append(leftSort[i]);
-                i += 1;
+                //Place the value of leftSort (lowest) in the index of result
+                result[k++] = leftSort[i++];
             }
             else
             {
-                result.Append(rightSort[j]);
-                j += 1;
+                //Otherwise place the value of rightSort (lowest) in the index of result
+                result[k++] = rightSort[j++];
             }
-
-            while (i < leftSort.Length)
-            {
-                result[j++] = leftSort[i++];
-            }
-
-            while (j < rightSort.Length)
-            {
-                result[i++] = rightSort[j++];
-            }
-
         }
+
+        //Any values leftover in leftSort will be placed at k index in result
+        while (i < leftSort.Length)
+        {
+            result[k++] = leftSort[i++];
+        }
+        //Same with any leftover of rightSort
+        while (j < rightSort.Length)
+        {
+            result[k++] = rightSort[j++];
+        }
+
         Console.WriteLine("Final sorted result: /n" + String.Join(", ", result));
         
         return result;
