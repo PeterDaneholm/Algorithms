@@ -2,6 +2,7 @@
 
 using Algorithms.Data_Structures;
 using Algorithms.Fibonacci;
+using Algorithms.Linked_Lists;
 
 Console.WriteLine("Hello, World!");
 
@@ -22,3 +23,5 @@ Console.WriteLine("Hello, World!");
 //int[] binarySearchNums = new[] { 4, 6, 7, 9, 12, 15, 19 };
 //DSABinarySearch.BinarySearch(binarySearchNums, 7, 0, binarySearchNums.Length-1);
 
+//LinkedLists.LinkedListExample();
+LinkedLists.CircularExample();
