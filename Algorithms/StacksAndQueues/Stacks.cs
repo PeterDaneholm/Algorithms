@@ -58,10 +58,16 @@ public class Stacks
                 Console.WriteLine($"Length of stack: {newArray.Length}");
                 break;
             default:
+                Console.WriteLine("Not a valid operation");
                 break;
         }
     }
     /*
      * However, the most ideal would be to create a custom Stack-class, and built in the operations there. 
+     */
+    
+    /* Stacks with Linked Lists
+     * A stack implemented with a linked list is much more dynamic, meaning it's much easier to grow scale it depending on need.
+     * They do come with a higher memory cost, and can become more complex due to the pointer inclusion. 
      */
 }
