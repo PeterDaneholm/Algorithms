@@ -1,3 +1,5 @@
+using System.Globalization;
+
 namespace Algorithms;
 
 public class HashSets
@@ -15,5 +17,43 @@ public class HashSets
      */
     
     //Example
+    public List<List<String>> buckets = new List<List<string>>();
+
+    private int HashFunc(string value)
+    {
+        int sum = 0;
+        foreach (var c in value)
+        {
+            sum += c.GetHashCode();
+        }
+
+        return sum % buckets.Count;
+    }
+
+    public string AddFunc(string value)
+    {
+        var index = HashFunc(value);
+        var bucket = buckets[index];
+        foreach (var b in bucket)
+        {
+            if (b == value) return "Already here";
+        }
+        buckets[index].Add(value);
+        return "All good, added";
+    }
+
+    public bool Contains(string value)
+    {
+        var index = HashFunc(value);
+        var bucket = buckets[index];
+        foreach (var b in bucket)
+        {
+            if (b == value) return true;
+        }
+
+        return false;
+    }
+    //Repeat implementation for removing below   
     
+    //
 }
